@@ -1,19 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: sans-serif;
 }
 
 .contenedor {
-    padding: 60px 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+    padding: 60px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1300px;
 }
 
 
@@ -169,11 +171,13 @@ main .nosotros{
 }
 
 .contenido-textos p{
-    font-size: 50px;
-    font-family: 'Open';
+    font-family: sans-serif;
     padding: 0px 0px 30px 0px;
     font-weight: 300;
     text-align: justify;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    padding-bottom: 3.7rem;
 }
 
 .btn-info{
@@ -184,13 +188,372 @@ main .nosotros{
 
 /* Slider */
 
+
 .slider{
-    background-color: #ccc;
-    width: 100vw;
-    max-width: 2000px;
+    background-color: #FFFFFF;
+    padding: 60px 0 60px 0;
 }
 
-.swiper {
+.slider a{
+    display: inline-block;
+    color: #0c62fb;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 17px;
+}
+
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.card img{
+    width: 400px;
+    height: 550px;
+    z-index: 0;
+}
+
+.card .content{
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card .content a{
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #262626;
+    color: #262626;
+    font-weight: 600;
+}
+
+.card .sliderText{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.card .img1{
+    background-image: url(../img/Persist-Nashville_Portrait_605x560.jpg);
+    background-size: cover;
+}
+
+.card .img2{
+    background-image: url(../img/Fairstone_Portrait_605x560.jpg);
+    background-size: cover;
+}
+
+.card .img3{
+    background-image: url(../img/Carters-portrait-landscape-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img4{
+    background-image: url(../img/Clean-up-australia-thumbnail-Portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img5{
+    background-image: url(../img/pacific-life-thumbnail-portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img6{
+    background-image: url(../img/LA-County-DPSS_SEO_605x560.jpg);
+    background-size: cover;
+}
+
+.card .img7{
+    background-image: url(../img/feeding-america-thumb-3-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img8{
+    background-image: url(../img/log-thumbnail-landscape-605x340.jpg);
+    background-size: cover;
+}
+
+.card .img9{
+    background-image: url(../img/CDL-thumbnail-portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img10{
+    background-image: url(../img/Carhartt-SEO-vertical.jpg);
+    background-size: cover;
+}
+
+.card .img11{
+    background-image: url(../img/UN-case-study-thumbnail-Portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img12{
+    background-image: url(../img/CoC-data-SEO.jpg);
+    background-size: cover;
+}
+
+.card .img13{
+    background-image: url(../img/IG-Wealth-thumbnail-Portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img14{
+    background-image: url(../img/ACS-thumbnail-portrait-605x560.jpg);
+    background-size: cover;
+}
+
+.card .img15{
+    background-image: url(../img/DSW-SEO-500x500.jpg);
+    background-size: cover;
+}
+
+.card .img16{
+    background-image: url(../img/alaska-plane-small-portrait-thumbnail-1210x1120.jpg);
+    background-size: cover;
+}
+
+.card .sliderText p{
+    background: white;
+    margin: 0 auto;
+    color: #000;
+    font-size: 3em;
+    position: relative;
+    top: 200px;
+    left: 30px;
+    width: 85%;
+}
+
+/* .swiper{
+    width: 1000px;
+} */
+
+.swiper-slide {
+    width: 400px;
+}
+
+
+/* Technologys */
+
+.tecn{
+    background: #f2f3f4;
+    padding: 60px 0 60px 0;
+    justify-content: center;
+}
+
+.tec-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.tec-3 a{
+    width: 15%;
+}
+
+.tec-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.tec-4 .tec-div{
+    width: 50%;
+}
+
+.tec-div button{
+    color: #0c62fb;
+    border: solid 1px #0c62fb;
+    padding: 17px 30px;
+    position: relative;
+    left: 0px;
+}
+
+
+
+/* About Us */
+.conteiner-row{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-about{
+    background: #fff;
+    padding: 60px 0 60px 0;
+    width: 50%;
+}
+
+.row-about a{
+    color: #0c62fb;
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 0 0 17px;
+}
+
+.row-about h2{
+    color: #111111;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 0 0 32px;
+}
+
+.row-about p{
+    color: 737373;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0 0 20px;
+}
+
+.row-about button{
+    background: #f2f3f4;
+    color: #0c62fb;
+    border: solid 1px #0c62fb;
+    padding: 17px 30px;
+}
+
+
+.about-img-1{
+    position: absolute;
+    top: -100px;
+    
+}
+
+.about-img-2{
+    position: absolute;
+    top: 10%;
+    right: -100px;
+}
+
+.about-img-3{
+    position: absolute;
+    bottom: -100px;
+}
+
+.about-img-1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.about-img-2 img{
+    width: 400px;
+    height: 400px;
+    clip-path: inset(0 40% 0 0);
+}
+
+.about-img-3 img{
+    width: 200px;
+    height: 200px;
+}
+
+/* thoung */
+
+.tng{
+    background: #f2f3f4;
+    padding: 65px 0 0;
+    color: #000;
+    font-size: 14px;
+    font-family: sans-serif;
+    
+}
+
+.contenedor .row-tng{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.tng1{
+    width: 100%;
+}
+
+.tng2{
+    width: 25%;
+}
+
+.tng3{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tng-image{
+    width: 80%;
+}
+
+/* .tng-image img{
+    width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border: 3px solid #ff9daa;
+} */
+
+.tng1 a{
+    color: #0c62fb;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 0px 0px 17px;
+}
+
+.tng1 h2{
+    font-size: 40px;
+    padding: 0px 0px 32px;
+}
+
+.tng2{
+    padding: 53px 10px 70px;
+}
+
+
+.tng2 .news{
+    padding: 0px 0px 50px;
+}
+
+.tng2 .news p{
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0px 0px 5px;
+}
+
+.tng2 .news span{
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0px 0px 5px;
+}
+
+
+.tng-image img{
     width: 600px;
-    height: 300px;
-  }
+	height: 300px;
+	object-fit: none;
+	
+}
+
+
+
