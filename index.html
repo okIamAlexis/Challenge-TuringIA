@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 
 
@@ -35,7 +35,7 @@
             </div>
             <div class="header__register">
                 <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-                <input type="button" class="btn" value="Let´s talts">
+                <input type="button" class="btn" id="talts" value="Let´s talts">
             </div>
         </section>
     </nav>
@@ -50,7 +50,7 @@
 </header>
 
 <main>
-    <section class="contenedor nosotros" >
+    <section class="contenedor nosotros" data-aos="zoom-out">
         <h2 class="titulo">About Us</h2>
         <div class="contenedor-nosotros" >
             <div class="contenido-textos" >
@@ -62,10 +62,11 @@
         </div>
     </section>
   
-    <section class="contenedor slider">
-      <a href="#">Hola Mundo</a>
+    <section class="contenedor slider" >
+      <a href="#" id="out-work">Out Work</a>
       <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" data-aos="fade-up"
+    data-aos-duration="2500">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
@@ -233,16 +234,16 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <a href="#">Hola Mundo</a>
+    <a href="#">View all case studies</a>
   </section>
 
-  <section class="tecn" id="Tecnology">
+  <section class="tecn" id="Tecnology" data-aos="zoom-out-up">
     <div class="contenedor tec-1">
 
       <div class="tec-2">
-        <a href="#Tecnology">HBSAJDBSA,HDB</a>
+        <a href="#Tecnology">TECHNOLOGY PLATFORMS</a>
       </div>
-      <div class="tec-3">
+      <div class="tec-3" >
           <a href="#Tecnology"><img src="img/platform-aws-up.svg" alt="" ></a>
           <a href="#Tecnology"><img src="img/platform-google-cloud-up.svg" alt=""></a>
           <a href="#Tecnology"><img src="img/platform-microsoft-up.svg" alt=""></a>
@@ -252,7 +253,7 @@
       </div>
       
       <div class="tec-4">
-        <div class="tec-div"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>
+        <div class="tec-div"><p>We have strong partnerships with the world's top tech companies.</p></div>
         <div class="tec-div"><button>View All</button></div>
       </div>
 
@@ -273,13 +274,16 @@
 
       </div>
 
-    <div class="about-img-1">
+    <div class="about-img-1" data-aos="fade-up"
+    data-aos-duration="2000">
       <img src="img/Three-images-with-content-landscape-840x1190.jpg" alt="">
     </div>
-    <div class="about-img-2">
+    <div class="about-img-2" data-aos="fade-up"
+    data-aos-duration="2000">
       <img src="img/homepage-working-circle-2-600x600.png" alt="">
     </div>
-    <div class="about-img-3">
+    <div class="about-img-3" data-aos="fade-up"
+    data-aos-duration="2000">
       <img src="img/Three-images-with-content-landscape-840x1190.jpg" alt="">
     </div>   
   </section>
@@ -290,7 +294,7 @@
 
         <div class="tng1">
           <a href="#">What where thinking</a>
-          <h2>Hola Mundo</h2>
+          <h2>Our latest company news, whitepapers, videos, and articles.</h2>
         </div>
   
         <div class="tng2">
@@ -317,14 +321,16 @@
         <div class="tng3">
           <div class="tng-image">
             <p>solution</p>
-            <img src="img/AI-Thumbnail-2-605x560.jpg" alt="">
+            <img src="img/AI-Thumbnail-2-605x560.jpg" alt="" data-aos="fade-up"
+            data-aos-duration="2000">
             <div>
             <span>Al for all</span>
             </div>
           </div>
           <div class="tng-image">
             <p>article</p>
-            <img src="img/Chicago-Cubs_Portrait_605x560.jpg" alt="">
+            <img src="img/Chicago-Cubs_Portrait_605x560.jpg" alt="" data-aos="fade-up"
+            data-aos-duration="2000">
             <div>
             <span>How to delight baseball fans- and your customers too</span>
             </div>
@@ -334,14 +340,140 @@
       </div>
 
     </div>
+
+    <div class="ftr-extra">
+      <div class="row-extra">
+        
+          <div class="ext-info">
+            <p>explore the future</p>
+            <p>Unleash creativity and innovation with Slalom Element.</p>
+          </div>
+          <div class="ext-a">
+            <a href="#">Learn More</a>
+          </div>
+        
+        
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="contenedor">
+    <div class="future">
+      <h3>Your future starts today. Ready?</h3>
+      <div class="future-btn">
+        <button>Let´s talk</button>
+      </div>
+    </div>
   </section>
 
 
 </main>
 
+
+<footer>
+  
+  <div class="contenedor foot">
+
+    <div class="item">
+      <a href="#" id="slalom">Slalom</a><br>
+      <br>
+      <p>Have you seen what we’ve been working on at <a href="#"style="border-bottom: 1px solid;">Slalom Build</a>?</p>
+      <br>
+      <p>Visit our Medium publication <a href="#"style="border-bottom: 1px solid;">The Slowdown</a> for explorations of diversity, inclusion, and the future.</p>
+    </div>
+
+    <div class="item-1">
+      <div class="item-1-flex">
+
+        <div class="ft-posicion">
+
+          <div class="menu">
+            <span>
+              <a href="#">What we do</a>
+            </span>
+          </div>
+          <div class="menu-name">
+            <a href="#">Strategy</a><br>
+            <a href="#">Technology</a><br>
+            <a href="#">Transformation</a><br>
+            <a href="#">Industries</a><br>
+            <a href="#">Case studies</a><br>
+          </div>
+        </div>  
+      
+        <div class="ft-posicion">
+          <div class="menu">
+            <span><a href="#">Platforms</a></span>
+          </div>
+          <div class="menu-name">
+            <a href="#">AWS</a><br>
+            <a href="#">Google Cloud</a><br>
+            <a href="#">Microsoft</a><br>
+            <a href="#">Salesforce</a><br>
+            <a href="#">Snowflake</a><br>
+            <a href="#">Tableau</a><br>
+          </div>
+        </div>  
+        
+        <div class="ft-posicion">
+          <div class="menu">
+            <span><a href="#">Who we are</a></span>
+          </div>
+          <div class="menu-name">
+            <a href="#">Culture</a><br>
+            <a href="#">Inclusion, diversity, and equity</a><br>
+            <a href="#">Sustainability and impact</a><br>
+            <a href="#">Newsroom</a><br>
+          </div>
+        </div>  
+
+        <div class="ft-posicion">
+
+          <div class="ft-ext">
+            <a href="#">Insights</a><br><br>
+            <a href="#">Careers</a><br><br>
+            <a href="#">Locations</a><br><br>
+            
+          </div>
+          
+        </div>
+
+
+
+      </div>  
+    </div>
+
+    <div class="item-3">
+      <div class="ft-redes">
+        <a href="https://www.facebook.com/slalomconsulting"><span><i class="fa-brands fa-facebook-square"></i></span></a>
+        <a href="https://twitter.com/slalom"><span><i class="fa-brands fa-twitter"></i></span></a>
+        <a href="https://www.instagram.com/slalomconsulting/"><span><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="https://www.linkedin.com/company/slalom-consulting/"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+      </div>
+    </div>
+    <div class="item-4">
+      <a href="#">Privacy policy</a><br>
+      <a href="#">Terms of use</a><br>
+      <a href="#">Cookie settings</a><br>
+    </div>
+    <div class="item-5">
+      <p>© 2022 Slalom, LLC</p>
+      <br>
+      <p>All rights reserved</p>
+    </div>
+    <div class="item-6">
+      <p>Love your future</p>
+      <span></span>
+    </div>
+  </div>
+  
+</footer>
+
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
